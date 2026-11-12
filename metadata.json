@@ -1,0 +1,7 @@
+{
+  "name": "Kesari Tours - Escorted Group Holidays & World Travel",
+  "description": "Information-rich travel agency portal inspired by Kesari.in featuring escorted group tours, specialty holidays, departure calendars, and full interactive booking flow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
