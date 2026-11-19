@@ -71,7 +71,7 @@ export const WhyKesariSection: React.FC = () => {
   ];
 
   return (
-    <section id="why-alps" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto select-none scroll-mt-20">
+    <section id="why-alps" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto select-none scroll-mt-20">
       <div id="why-alps-section" className="sr-only">Why Alps Hotels and Travels</div>
       {/* Title Header */}
       <div className="text-center mb-12 sm:mb-16">

@@ -26,7 +26,7 @@ export const ServiceStripAfterPopular: React.FC = () => {
   ];
 
   return (
-    <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section className="py-8 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
       <div className="bg-[#FAF7F2] rounded-3xl border border-amber-100/60 shadow-xs px-6 py-8 sm:px-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-amber-200/50">
         {services.map((service, index) => {
           const IconComp = service.icon;

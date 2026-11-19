@@ -73,7 +73,7 @@ export const PopularDestinations: React.FC<PopularDestinationsProps> = ({
   };
 
   return (
-    <section id="popular-destinations" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-20">
+    <section id="popular-destinations" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto scroll-mt-20">
       {/* Header Row: "Popular Destinations" and "View All Destinations →" */}
       <div className="flex items-center justify-between mb-6 sm:mb-8">
         <div className="flex items-center gap-2">

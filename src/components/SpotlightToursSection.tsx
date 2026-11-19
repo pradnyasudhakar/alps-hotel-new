@@ -112,7 +112,7 @@ export const SpotlightToursSection: React.FC<SpotlightToursSectionProps> = ({ cu
   const filteredTours = SPOTLIGHT_TOURS.filter(t => t.category === activeCategory);
 
   return (
-    <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto select-none">
+    <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto select-none">
       {/* Title Header */}
       <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl font-black text-slate-900 font-display tracking-tight">

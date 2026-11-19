@@ -55,7 +55,7 @@ export const LuxurySailingSection: React.FC<LuxurySailingSectionProps> = ({
   onEnquire
 }) => {
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-[#071310] text-white rounded-3xl sm:rounded-[32px] my-10 relative overflow-hidden select-none">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto bg-[#071310] text-white rounded-3xl sm:rounded-[32px] my-10 relative overflow-hidden select-none">
       {/* Background Decorative Glows */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />

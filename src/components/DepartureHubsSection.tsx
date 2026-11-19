@@ -575,7 +575,7 @@ export const DepartureHubsSection: React.FC<DepartureHubsSectionProps> = ({
   ];
 
   return (
-    <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-[#FAFCFB] select-none">
+    <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto bg-[#FAFCFB] select-none">
       {/* 1. Header matching UI screenshot */}
       <div className="text-center mb-10 sm:mb-14">
         <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-slate-900 font-display tracking-tight leading-tight">

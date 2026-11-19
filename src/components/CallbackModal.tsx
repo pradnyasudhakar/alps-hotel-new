@@ -101,7 +101,7 @@ export const CallbackModal: React.FC<CallbackModalProps> = ({ isOpen, onClose })
                     required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="+91 98200 12345"
+                    placeholder="9152861588 "
                     className="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs font-medium focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#0C3C78]"
                   />
                 </div>

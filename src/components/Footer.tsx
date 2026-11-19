@@ -34,12 +34,12 @@ export const Footer: React.FC = () => {
             <div className="pt-2 space-y-2 text-xs text-slate-600">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#0057B5] shrink-0" />
-                <span className="font-semibold text-slate-900">Toll Free: 1800 229 575</span>
-                <span className="text-slate-500">/ 022 6664 0000</span>
+                <span className="font-semibold text-slate-900">Toll Free:  9152861588</span>
+                {/* <span className="text-slate-500">/ 022 6664 0000</span> */}
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#0057B5] shrink-0" />
-                <span>hello@alphotelsandtravels.com</span>
+                <span> info@alphotelsandtravels.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-[#0057B5] shrink-0" />

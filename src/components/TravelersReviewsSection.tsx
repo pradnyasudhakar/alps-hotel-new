@@ -95,7 +95,7 @@ export const TravelersReviewsSection: React.FC = () => {
   };
 
   return (
-    <section id="travelers-reviews" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto select-none scroll-mt-20">
+    <section id="travelers-reviews" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto select-none scroll-mt-20">
       {/* 1. Header with Eyebrow, Title and View All Reviews */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12 gap-4">
         <div>

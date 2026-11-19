@@ -263,7 +263,7 @@ export const CinematicSpecialTours: React.FC<CinematicSpecialToursProps> = ({
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none z-10" />
 
       {/* 4. Main Body: Left Details & Right Card Carousel (3 cards) */}
-      <div className="relative z-30 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-center">
+      <div className="relative z-30 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-12 flex-1 flex flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column matching reference UI layout */}

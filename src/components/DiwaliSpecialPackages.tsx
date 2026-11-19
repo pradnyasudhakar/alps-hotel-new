@@ -143,7 +143,7 @@ export const DiwaliSpecialPackages: React.FC<DiwaliSpecialPackagesProps> = ({
   };
 
   return (
-    <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+    <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto overflow-hidden">
       {/* Section Header */}
       <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#112A22] font-display tracking-tight text-balance">

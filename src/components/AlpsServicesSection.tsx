@@ -60,7 +60,7 @@ export const AlpsServicesSection: React.FC<AlpsServicesSectionProps> = ({ onEnqu
 
   return (
     <>
-      <section id="alps-services" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-slate-50/70 rounded-3xl my-8 select-none scroll-mt-20">
+      <section id="alps-services" className="py-14 sm:py-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto bg-slate-50/70 rounded-3xl my-8 select-none scroll-mt-20">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 font-display tracking-tight">
