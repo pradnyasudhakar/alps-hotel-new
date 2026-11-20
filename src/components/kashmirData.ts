@@ -1,6 +1,17 @@
 export interface Stop { title: string; text: string }
 export interface Day { day: number; title: string; intro: string; stops: Stop[]; meal: string }
 
+export const PRICE = {
+  amount: 20400,
+  label: 'per person',
+  note: 'Inclusive of meals and sightseeing as per itinerary',
+};
+
+export const SEASON = {
+  months: 'March – April',
+  highlight: 'Tulip Season',
+};
+
 export const ROUTE = ['Srinagar', 'Sonmarg', 'Srinagar', 'Gulmarg', 'Srinagar', 'Pahalgam', 'Srinagar Airport'];
 
 export const STAY = [
@@ -10,7 +21,6 @@ export const STAY = [
 ];
 
 export const ROUTE_NOTES = [
-  'This itinerary is arranged for a group of 22 passengers travelling together in a 27-seater bus, with 11 rooms as requested.',
   'Sightseeing order and road timings may be adjusted according to weather, traffic and local administration instructions.',
 ];
 
@@ -18,7 +28,7 @@ export const DAYS: Day[] = [
   {
     day: 1,
     title: 'Arrival in Srinagar & Local Sightseeing',
-    intro: 'Arrival at Srinagar Airport. Meet the local tour representative and receive a traditional Kashmiri welcome shawl. Board the 27-seater bus and proceed for the planned Srinagar sightseeing, subject to arrival time.',
+    intro: 'Arrival at Srinagar Airport. Meet the local tour representative and receive a traditional Kashmiri welcome shawl. Proceed for the planned Srinagar sightseeing, subject to arrival time.',
     stops: [
       { title: 'Dal Lake', text: 'Begin with the famous Dal Lake, one of Srinagar’s best-known landmarks. Enjoy views of the houseboats, floating gardens, traditional wooden boats and the surrounding Zabarwan hills.' },
       { title: 'Mughal Gardens – Nishat Bagh', text: 'Visit Nishat Bagh, the Garden of Bliss, known for its terraced lawns, fountains, water channels and beautiful views of Dal Lake.' },
@@ -71,7 +81,7 @@ export const DAYS: Day[] = [
   {
     day: 5,
     title: 'Pahalgam Sightseeing & Return to Srinagar',
-    intro: 'After breakfast, check out and explore the popular Pahalgam valley areas. Local sightseeing access is controlled by local unions and may require separate local vehicles. The 27-seater bus may not be permitted on certain internal routes.',
+    intro: 'After breakfast, check out and explore the popular Pahalgam valley areas. Local sightseeing access is controlled by local unions and may require separate local vehicles.',
     stops: [
       { title: 'Betaab Valley', text: 'Visit the picturesque valley known for its lush meadows, river views, pine trees and mountain backdrop. It is a popular location for nature walks and photographs.' },
       { title: 'Aru Valley', text: 'Explore the scenic village and valley surrounded by forests and mountain peaks. It is known for its peaceful landscape and access to outdoor experiences.' },
@@ -84,7 +94,7 @@ export const DAYS: Day[] = [
   {
     day: 6,
     title: 'Departure from Srinagar',
-    intro: 'After breakfast, check out from the hotel. Board the bus and proceed to Srinagar Airport according to the flight schedule. The group representative will assist with departure coordination.',
+    intro: 'After breakfast, check out from the hotel. Proceed to Srinagar Airport according to the flight schedule. The group representative will assist with departure coordination.',
     stops: [
       { title: 'Airport transfer', text: 'Drop at Srinagar Airport. Please keep sufficient time for the journey and airport security procedures.' },
     ],
@@ -101,16 +111,13 @@ export const HOTELS = [
 ];
 
 export const HOTEL_DETAILS = [
-  { label: 'Rooming', text: '11 rooms for 22 passengers. Room configuration and bed type should be reconfirmed with the hotels before arrival.' },
   { label: 'Meal plan', text: 'Breakfast and dinner (MAP). Lunch is not included.' },
-  { label: 'Transport', text: 'One 27-seater bus for the group itinerary and transfers. Local union vehicles may be required for certain sightseeing areas.' },
 ];
 
 export const INCLUSIONS = [
   'Accommodation for 5 nights in the mentioned / equivalent 3-star deluxe hotels.',
-  '11 rooms for 22 passengers, subject to final rooming confirmation.',
   'Daily breakfast and dinner at the hotels (MAP plan).',
-  'Transportation by 27-seater bus as per the itinerary, including airport pickup and drop.',
+  'Transportation as per the itinerary, including airport pickup and drop.',
   'One Shikara ride on Dal Lake.',
   'Traditional welcome shawls for guests on arrival.',
   'Hotel taxes and service components as per the confirmed hotel booking; any additional statutory levy introduced later will be handled as per supplier policy.',
@@ -121,7 +128,7 @@ export const EXCLUSIONS = [
   'Gulmarg Gondola / cable car tickets.',
   'Gulmarg local union cab, if required for local sightseeing or access.',
   'Pahalgam local union cab / local sightseeing vehicle for Betaab Valley, Aru Valley, Chandanwari and other restricted routes.',
-  'Sonmarg Zero Point cab and any other locally operated vehicle required beyond the bus route.',
+  'Sonmarg Zero Point cab and any other locally operated vehicle.',
   'Pony rides, horse riding, sledging, skiing, ATV rides, rafting and all other optional activities.',
   'Entry tickets, monument fees, guide charges, personal expenses, tips and shopping.',
   'Any additional sightseeing, route diversion, extra vehicle, or service not specifically mentioned under inclusions.',
@@ -129,20 +136,9 @@ export const EXCLUSIONS = [
 
 export const NOTES = [
   'The itinerary is planned in the sequence provided. Actual departure times and stop durations may change due to traffic, weather, road closures or local administration instructions.',
-  'The 27-seater bus will operate on permitted roads. Some sightseeing points in Gulmarg, Sonmarg and Pahalgam may require separate local union vehicles or pony services at additional cost.',
+  'Some sightseeing points in Gulmarg, Sonmarg and Pahalgam may require separate local union vehicles or pony services at additional cost.',
   'Thajiwas Glacier, Zero Point, Drung Waterfall and high-altitude routes are weather- and season-dependent. Access cannot be guaranteed.',
   'Gondola tickets are subject to availability and official operating schedules. Guests should arrange tickets in advance where possible.',
   'Please carry valid government photo identification for hotel check-in and travel.',
   'Guests should follow local instructions, keep the group together and arrive promptly at agreed reporting times.',
 ];
-
-export const PRICE = {
-  amount: 20400,
-  label: 'per person',
-  note: 'Inclusive of meals and sightseeing as per itinerary',
-};
-
-export const SEASON = {
-  months: 'March – April',
-  highlight: 'Tulip Season',
-};

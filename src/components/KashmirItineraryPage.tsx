@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-  ChevronRight, Users, BedDouble, Bus, CalendarDays, MapPin, Hotel,
+  ChevronRight, CalendarDays, MapPin, Hotel,
   Check, X, Info, ChevronDown, Phone, Utensils, Moon, Download,
   MessageCircle, Sun, Camera, ShieldCheck, Clock, Flower2, IndianRupee,
 } from 'lucide-react';
@@ -13,23 +13,20 @@ import {
 } from './kashmirData';
 
 const HERO_IMAGE = '/assets/aistudio/kashmir-hero.webp';
-const PHONE = 'tel:+91 9152861588'; // asli number daalo
-const WHATSAPP = 'https://wa.me/9152861588?text=Hi%2C%20I%20want%20a%20quote%20for%20the%20Kashmir%20Group%20Tour%20(5N%2F6D)'; // asli number daalo
+const PHONE = 'tel:+919152861588';
+const WHATSAPP = 'https://wa.me/919152861588?text=Hi%2C%20I%20want%20a%20quote%20for%20the%20Kashmir%20Tour%20(5N%2F6D)';
 
 const FACTS = [
-  { icon: Users, label: 'Group Size', value: '22 Passengers' },
-  { icon: BedDouble, label: 'Rooms', value: '11 Rooms' },
-  { icon: Bus, label: 'Vehicle', value: '27-Seater Bus' },
-  { icon: CalendarDays, label: 'Duration', value: '5N / 6D' },
+  { icon: CalendarDays, label: 'Duration', value: '5 Nights / 6 Days' },
   { icon: Flower2, label: 'Best Season', value: SEASON.months },
+  { icon: Hotel, label: 'Hotels', value: '3-Star Deluxe' },
+  { icon: Utensils, label: 'Meals', value: 'Breakfast & Dinner' },
 ];
 
 const HIGHLIGHTS = [
-  { icon: Flower2, text: 'Tulip Season • March – April' },
+  { icon: Flower2, text: 'Tulip Season' },
   { icon: Camera, text: 'Dal Lake Shikara Ride' },
   { icon: Sun, text: 'Sonmarg, Gulmarg & Pahalgam' },
-  { icon: Utensils, text: 'Breakfast & Dinner (MAP)' },
-  { icon: ShieldCheck, text: '3-Star Deluxe Hotels' },
 ];
 
 const TABS = [
@@ -51,7 +48,7 @@ export const KashmirItineraryPage: React.FC = () => {
   const navigate = useNavigate();
   const [openDays, setOpenDays] = useState<number[]>([1]);
   const [activeTab, setActiveTab] = useState('overview');
-  const tourName = 'Kashmir Group Tour (5N/6D)';
+  const tourName = 'Kashmir Tour (5N/6D)';
   const price = PRICE.amount.toLocaleString('en-IN');
 
   const onEnquire = () => { window.location.href = PHONE; };
@@ -89,51 +86,52 @@ export const KashmirItineraryPage: React.FC = () => {
       />
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-[#0B1F3A]">
-        <img src={HERO_IMAGE} alt="Kashmir valley" className="absolute inset-0 h-full w-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-[#0B1F3A]/70 to-[#0B1F3A]/30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F3A]/80 via-transparent to-transparent" />
+      {/* HERO */}
+<section className="relative overflow-hidden bg-[#0B1F3A]">
+  <img src={HERO_IMAGE} alt="Kashmir valley" className="absolute inset-0 h-full w-full object-cover object-center" />
+  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A]/90 via-[#0B1F3A]/30 to-transparent" />
+  <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F3A]/70 via-[#0B1F3A]/10 to-transparent" />
 
-        <div className="relative px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto pt-8 sm:pt-12 pb-28 sm:pb-32">
-          <nav className="flex items-center gap-1.5 text-xs font-semibold text-slate-300">
-            <button onClick={() => navigate('/')} className="hover:text-white cursor-pointer">Home</button>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-white">Kashmir Group Tour</span>
-          </nav>
+  <div className="relative px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto pt-8 sm:pt-12 pb-28 sm:pb-32">
+    <nav className="flex items-center gap-1.5 text-xs font-semibold text-slate-200">
+      <button onClick={() => navigate('/')} className="hover:text-white cursor-pointer">Home</button>
+      <ChevronRight className="w-3.5 h-3.5" />
+      <span className="text-white">Kashmir Tour</span>
+    </nav>
 
-          <div className="mt-8 sm:mt-12 max-w-3xl">
-            <div className="flex flex-wrap gap-2">
-              <span className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-3.5 py-1.5 text-[11px] font-extrabold uppercase tracking-wider text-slate-950">
-                <Clock className="w-3.5 h-3.5" /> 5 Nights / 6 Days
-              </span>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3.5 py-1.5 text-[11px] font-extrabold uppercase tracking-wider text-[#0057B5]">
-                <IndianRupee className="w-3.5 h-3.5" /> {price} {PRICE.label}
-              </span>
-            </div>
-            <h1 className="mt-4 text-4xl sm:text-6xl font-black font-display tracking-tight text-white leading-[1.05]">
-              Kashmir
-            </h1>
-            <p className="mt-4 text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl">
-              A memorable group journey through the valleys, meadows and lakes of Kashmir
-            </p>
+    <div className="mt-10 sm:mt-16 max-w-2xl">
+      <div className="flex flex-wrap gap-2">
+        <span className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-3.5 py-1.5 text-[11px] font-extrabold uppercase tracking-wider text-slate-950">
+          <Clock className="w-3.5 h-3.5" /> 5 Nights / 6 Days
+        </span>
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3.5 py-1.5 text-[11px] font-extrabold uppercase tracking-wider text-[#0057B5]">
+          <IndianRupee className="w-3.5 h-3.5" /> {price} {PRICE.label}
+        </span>
+      </div>
+      <h1 className="mt-4 text-5xl sm:text-7xl font-black font-display tracking-tight text-white leading-[1.02] drop-shadow-lg">
+        Kashmir
+      </h1>
+      <p className="mt-4 text-base sm:text-lg text-slate-100 leading-relaxed drop-shadow">
+        A memorable journey through the valleys, meadows and lakes of Kashmir
+      </p>
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              {HIGHLIGHTS.map(({ icon: Icon, text }) => (
-                <span
-                  key={text}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-semibold text-white backdrop-blur"
-                >
-                  <Icon className="w-3.5 h-3.5 text-amber-300" /> {text}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="mt-6 flex flex-wrap gap-2">
+        {HIGHLIGHTS.map(({ icon: Icon, text }) => (
+          <span
+            key={text}
+            className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-xs font-semibold text-white backdrop-blur"
+          >
+            <Icon className="w-3.5 h-3.5 text-amber-300" /> {text}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* FACTS */}
       <section className="relative z-10 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto -mt-14">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 rounded-3xl bg-white p-5 sm:p-6 shadow-xl shadow-slate-900/10 ring-1 ring-slate-200">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 rounded-3xl bg-white p-5 sm:p-6 shadow-xl shadow-slate-900/10 ring-1 ring-slate-200">
           {FACTS.map(({ icon: Icon, label, value }) => (
             <div key={label} className="flex items-center gap-3">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#EDF5FD] text-[#0057B5]">
@@ -279,7 +277,7 @@ export const KashmirItineraryPage: React.FC = () => {
 
           {/* HOTELS */}
           <section id="hotels" className="scroll-mt-40">
-            <SectionTitle eyebrow="Stay" title="Hotel & Rooming Details" />
+            <SectionTitle eyebrow="Stay" title="Hotel Details" />
             <div className="rounded-3xl bg-white p-5 sm:p-6 ring-1 ring-slate-200">
               <p className="mb-5 text-xs leading-relaxed text-slate-500">{HOTEL_INTRO}</p>
               <div className="grid gap-4 md:grid-cols-2">
@@ -301,7 +299,7 @@ export const KashmirItineraryPage: React.FC = () => {
                   </div>
                 ))}
               </div>
-              <div className="mt-5 grid gap-3 border-t border-slate-100 pt-5 text-xs text-slate-600 sm:grid-cols-3">
+              <div className="mt-5 grid gap-3 border-t border-slate-100 pt-5 text-xs text-slate-600">
                 {HOTEL_DETAILS.map((d) => (
                   <p key={d.label}><b className="block text-[#0B1F3A]">{d.label}</b>{d.text}</p>
                 ))}
@@ -377,7 +375,7 @@ export const KashmirItineraryPage: React.FC = () => {
           <div className="sticky top-40 space-y-4">
             <div className="overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-900/10 ring-1 ring-slate-200">
               <div className="bg-gradient-to-r from-[#0C3C78] to-[#0057B5] p-5 text-white">
-                <p className="text-[11px] font-bold uppercase tracking-wider text-blue-100">Group Package</p>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-blue-100">Tour Package</p>
                 <p className="mt-1 text-xl font-black font-display">{tourName}</p>
               </div>
               <div className="space-y-4 p-5">
@@ -393,9 +391,6 @@ export const KashmirItineraryPage: React.FC = () => {
                   </p>
                 </div>
                 <ul className="space-y-2.5 text-xs text-slate-600">
-                  <li className="flex items-center gap-2"><Users className="h-4 w-4 text-[#0057B5]" /> 22 passengers</li>
-                  <li className="flex items-center gap-2"><BedDouble className="h-4 w-4 text-[#0057B5]" /> 11 rooms, 3-star deluxe</li>
-                  <li className="flex items-center gap-2"><Bus className="h-4 w-4 text-[#0057B5]" /> 27-seater bus</li>
                   <li className="flex items-center gap-2"><Utensils className="h-4 w-4 text-[#0057B5]" /> Breakfast & dinner</li>
                 </ul>
                 <button
