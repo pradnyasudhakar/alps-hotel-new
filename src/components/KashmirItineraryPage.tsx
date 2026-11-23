@@ -32,7 +32,7 @@ const HIGHLIGHTS = [
 const TABS = [
   { id: 'overview', label: 'Overview' },
   { id: 'itinerary', label: 'Itinerary' },
-  { id: 'hotels', label: 'Hotels' },
+  // { id: 'hotels', label: 'Hotels' /},
   { id: 'inclusions', label: 'Inclusions' },
   { id: 'notes', label: 'Notes' },
 ];
@@ -276,7 +276,7 @@ export const KashmirItineraryPage: React.FC = () => {
           </section>
 
           {/* HOTELS */}
-          <section id="hotels" className="scroll-mt-40">
+          {/* <section id="hotels" className="scroll-mt-40">
             <SectionTitle eyebrow="Stay" title="Hotel Details" />
             <div className="rounded-3xl bg-white p-5 sm:p-6 ring-1 ring-slate-200">
               <p className="mb-5 text-xs leading-relaxed text-slate-500">{HOTEL_INTRO}</p>
@@ -305,7 +305,7 @@ export const KashmirItineraryPage: React.FC = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* INCLUSIONS */}
           <section id="inclusions" className="scroll-mt-40">
